@@ -10,14 +10,14 @@ As I test Klipper on my Elegoo Neptune 3 Max. I will update these files as I go.
   Comm - USART2 PA3/PA2  ----- (My J17 UART pins are connected to PA2 and PA3 on the processor. USART1 did not work for me
   Baudrate - 250000
 
-  - Printercfg (not uploaded)
+  - Printer.cfg (not uploaded)
     Try out or test any of the printer.cfg online for the Neptune 3 Max
     Verify that serial interface and baud rate are specified.
 
+    I used https://github.com/TheFeralEngineer/Klipper-for-Elegoo-Neptune-series-3D-Printers
+
 [mcu]
-serial: /dev/ttyUSB0
 baud: 250000
-restart_method: command
 
 - ZNP_ROBIN_NANO.bin
    This is the firmware I have flashed to the printer. If successful the printer bootloader will rename it with a new extension, .CUR
